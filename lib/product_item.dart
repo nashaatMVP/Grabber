@@ -32,7 +32,7 @@ class ProductItem extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade100,
+                    color: Colors.grey.shade50,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   width: 140,
@@ -40,7 +40,6 @@ class ProductItem extends StatelessWidget {
                   padding: EdgeInsets.all(10),
                   child: Image.asset(image, width: 120,fit: BoxFit.cover),
                 ),
-
                 Positioned(
                     bottom: 6,
                     right: 5,
@@ -69,7 +68,7 @@ class ProductItem extends StatelessWidget {
                     name,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                 ),
                 SizedBox(height: 10),
@@ -81,7 +80,7 @@ class ProductItem extends StatelessWidget {
                     Text(
                       "$rate ($rateCount)",
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.normal,
                       ),
                     ),
@@ -90,7 +89,7 @@ class ProductItem extends StatelessWidget {
                 SizedBox(height: 10),
                 Text(
                   "\$ $price",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 10),
               ],
